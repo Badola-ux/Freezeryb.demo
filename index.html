@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/32339b54bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img.png" alt="Logo" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span>Freezer</span><br>from Pauri Garhwal Uttarakhand, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- About Section --------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ig2.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am practical knowledge seeker. To work in an environment where my
+                        skills and knowledge reflects the growth of the company and enhance my
+                        knowledge and experience. I had a knowledge of my engineering subjects
+                        although I am learning web development through which we can change
+                        the world with new possibilities. To make it possible some skills I am
+                        learning like REACT, NodeJS, ExpressJs, Vue Js, AngularJs, MongoDB, Recharts, HTML, CSS, JavaScript and Bootstrap etc.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Ducat Training Institute</li>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>DevOps</span><br>Real-time Object Detection</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - 2025</span><br>E-commerce sites: Amazon, Blinkit Clone</li>
+                            <li><span>2023 - 2024</span><br>Prediction Site</li>
+                            <li><span>2025 - Present</span><br>Real-time Object Detection</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Ducat Training Institute, Noida</li>
+                            <li><span>2020 - 2024</span><br>B.Tech in CSE, Doon Institute of Technology, Dehradun</li>
+                            <li><span>2017 - 2020</span><br>10th & 12th, Army Public School & Kendriya Vidyalaya</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------services------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web Development means building both the front end (what users see) and the back end (how everything works behind the scenes) of a website or web application.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>A UI/UX designer designs a signup page that looks clean (UI) and is easy to fill out and submit without confusion (UX).</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>DevOps</h2>
+                <p>A DevOps person makes sure your code changes go live without breaking anything, and keeps the app running 24/7.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------portfolio------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" alt="Social Media App">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png" alt="Music Site">
+                <div class="layer">
+                    <h3>Music Site</h3>
+                    <p>Discover and stream music. Connect with artists. Available on the Play Store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png" alt="Online Shopping Site">
+                <div class="layer">
+                    <h3>Online Shopping Site</h3>
+                    <p>Shop products online with ease. Download the app from the Play Store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> badolayash14@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7505845714</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="New Resume 2.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Ⓒ Freezer. Made with <i class="fa-solid fa-heart"></i> by The Easy Tutorials</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
